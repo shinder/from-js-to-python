@@ -901,32 +901,32 @@ def primes():
 
 ### 推導式語法對照
 
-| 類型 | 語法 | 結果 |
-|------|------|------|
-| 列表推導式 | `[x for x in iterable]` | `list` |
-| 字典推導式 | `{k: v for k, v in iterable}` | `dict` |
-| 集合推導式 | `{x for x in iterable}` | `set` |
-| 生成器表達式 | `(x for x in iterable)` | `generator` |
+| 類型         | 語法                          | 結果        |
+| ------------ | ----------------------------- | ----------- |
+| 列表推導式   | `[x for x in iterable]`       | `list`      |
+| 字典推導式   | `{k: v for k, v in iterable}` | `dict`      |
+| 集合推導式   | `{x for x in iterable}`       | `set`       |
+| 生成器表達式 | `(x for x in iterable)`       | `generator` |
 
 ### JavaScript 對照
 
-| JavaScript | Python |
-|------------|--------|
-| `arr.map(x => f(x))` | `[f(x) for x in arr]` |
-| `arr.filter(x => cond)` | `[x for x in arr if cond]` |
-| `arr.map().filter()` | `[f(x) for x in arr if cond]` |
-| `arr.flat()` | `[x for sub in arr for x in sub]` |
-| `arr.reduce()` | `functools.reduce()` 或迴圈 |
+| JavaScript              | Python                            |
+| ----------------------- | --------------------------------- |
+| `arr.map(x => f(x))`    | `[f(x) for x in arr]`             |
+| `arr.filter(x => cond)` | `[x for x in arr if cond]`        |
+| `arr.map().filter()`    | `[f(x) for x in arr if cond]`     |
+| `arr.flat()`            | `[x for sub in arr for x in sub]` |
+| `arr.reduce()`          | `functools.reduce()` 或迴圈       |
 
 ### 生成器 vs 列表
 
-| 特性 | 列表 | 生成器 |
-|------|------|--------|
-| 記憶體 | 一次性載入 | 惰性求值 |
-| 遍歷次數 | 多次 | 一次 |
-| 索引存取 | 支援 | 不支援 |
-| 長度 | `len()` | 不支援 |
-| 適用場景 | 小資料集 | 大資料集 |
+| 特性     | 列表       | 生成器   |
+| -------- | ---------- | -------- |
+| 記憶體   | 一次性載入 | 惰性求值 |
+| 遍歷次數 | 多次       | 一次     |
+| 索引存取 | 支援       | 不支援   |
+| 長度     | `len()`    | 不支援   |
+| 適用場景 | 小資料集   | 大資料集 |
 
 ### 最佳實踐
 

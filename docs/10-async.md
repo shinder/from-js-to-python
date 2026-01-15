@@ -43,13 +43,13 @@ asyncio.run(main())
 
 ### JavaScript vs Python 非同步模型
 
-| 特性 | JavaScript | Python |
-|------|------------|--------|
-| 執行環境 | 單執行緒 + 事件迴圈（內建） | 需要明確建立事件迴圈 |
-| 啟動方式 | 自動執行 | `asyncio.run()` |
-| Promise | 內建 `Promise` | `asyncio.Future` |
-| async 函式 | 回傳 `Promise` | 回傳 `Coroutine` |
-| 頂層 await | 支援（ES2022+） | 僅在 `asyncio.run()` 內 |
+| 特性       | JavaScript                  | Python                  |
+| ---------- | --------------------------- | ----------------------- |
+| 執行環境   | 單執行緒 + 事件迴圈（內建） | 需要明確建立事件迴圈    |
+| 啟動方式   | 自動執行                    | `asyncio.run()`         |
+| Promise    | 內建 `Promise`              | `asyncio.Future`        |
+| async 函式 | 回傳 `Promise`              | 回傳 `Coroutine`        |
+| 頂層 await | 支援（ES2022+）             | 僅在 `asyncio.run()` 內 |
 
 ---
 
@@ -1005,34 +1005,34 @@ def async_cache(ttl=60):
 
 ### JavaScript vs Python 非同步對照表
 
-| 功能 | JavaScript | Python |
-|------|------------|--------|
-| 定義 | `async function` | `async def` |
-| 等待 | `await` | `await` |
-| 執行 | 自動 / `.then()` | `asyncio.run()` |
-| 並行執行 | `Promise.all()` | `asyncio.gather()` |
-| 競速 | `Promise.race()` | `asyncio.wait(FIRST_COMPLETED)` |
-| 任一完成 | `Promise.any()` | 需自行實作 |
-| 超時 | 手動實作 | `asyncio.wait_for()` |
-| 建立任務 | 自動 | `asyncio.create_task()` |
-| 延遲 | `setTimeout` + Promise | `asyncio.sleep()` |
-| 佇列 | 無內建 | `asyncio.Queue` |
-| 信號量 | 無內建 | `asyncio.Semaphore` |
+| 功能     | JavaScript             | Python                          |
+| -------- | ---------------------- | ------------------------------- |
+| 定義     | `async function`       | `async def`                     |
+| 等待     | `await`                | `await`                         |
+| 執行     | 自動 / `.then()`       | `asyncio.run()`                 |
+| 並行執行 | `Promise.all()`        | `asyncio.gather()`              |
+| 競速     | `Promise.race()`       | `asyncio.wait(FIRST_COMPLETED)` |
+| 任一完成 | `Promise.any()`        | 需自行實作                      |
+| 超時     | 手動實作               | `asyncio.wait_for()`            |
+| 建立任務 | 自動                   | `asyncio.create_task()`         |
+| 延遲     | `setTimeout` + Promise | `asyncio.sleep()`               |
+| 佇列     | 無內建                 | `asyncio.Queue`                 |
+| 信號量   | 無內建                 | `asyncio.Semaphore`             |
 
 ### asyncio 常用 API
 
-| API | 用途 |
-|-----|------|
-| `asyncio.run(coro)` | 執行協程 |
-| `asyncio.create_task(coro)` | 建立任務 |
-| `asyncio.gather(*coros)` | 並行執行多個協程 |
-| `asyncio.wait(tasks)` | 等待任務完成 |
-| `asyncio.wait_for(coro, timeout)` | 帶超時的等待 |
-| `asyncio.sleep(seconds)` | 非同步延遲 |
-| `asyncio.Queue()` | 非同步佇列 |
-| `asyncio.Semaphore(n)` | 信號量（限制並發） |
-| `asyncio.Lock()` | 非同步鎖 |
-| `asyncio.Event()` | 非同步事件 |
+| API                               | 用途               |
+| --------------------------------- | ------------------ |
+| `asyncio.run(coro)`               | 執行協程           |
+| `asyncio.create_task(coro)`       | 建立任務           |
+| `asyncio.gather(*coros)`          | 並行執行多個協程   |
+| `asyncio.wait(tasks)`             | 等待任務完成       |
+| `asyncio.wait_for(coro, timeout)` | 帶超時的等待       |
+| `asyncio.sleep(seconds)`          | 非同步延遲         |
+| `asyncio.Queue()`                 | 非同步佇列         |
+| `asyncio.Semaphore(n)`            | 信號量（限制並發） |
+| `asyncio.Lock()`                  | 非同步鎖           |
+| `asyncio.Event()`                 | 非同步事件         |
 
 ### 關鍵差異提醒
 

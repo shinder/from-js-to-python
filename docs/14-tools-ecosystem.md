@@ -6,15 +6,15 @@
 
 ### JavaScript vs Python 生態系對照
 
-| 領域 | JavaScript/Node.js | Python |
-|------|-------------------|--------|
-| 套件管理器 | npm, yarn, pnpm | pip, poetry, pipenv, uv |
-| 套件倉庫 | npmjs.com | pypi.org |
-| 設定檔 | package.json | pyproject.toml, requirements.txt |
-| 依賴隔離 | node_modules | 虛擬環境（venv） |
-| 執行環境 | Node.js | CPython, PyPy |
-| 版本管理 | nvm, fnm | pyenv |
-| 執行套件指令 | npx | pipx |
+| 領域         | JavaScript/Node.js | Python                           |
+| ------------ | ------------------ | -------------------------------- |
+| 套件管理器   | npm, yarn, pnpm    | pip, poetry, pipenv, uv          |
+| 套件倉庫     | npmjs.com          | pypi.org                         |
+| 設定檔       | package.json       | pyproject.toml, requirements.txt |
+| 依賴隔離     | node_modules       | 虛擬環境（venv）                 |
+| 執行環境     | Node.js            | CPython, PyPy                    |
+| 版本管理     | nvm, fnm           | pyenv                            |
+| 執行套件指令 | npx                | pipx                             |
 
 ---
 
@@ -223,11 +223,11 @@ uv init my-project
 
 **速度比較：**
 
-| 操作 | pip | uv |
-|------|-----|-----|
-| 安裝 Django | ~10s | ~0.5s |
-| 建立虛擬環境 | ~3s | ~0.1s |
-| 解析依賴 | 慢 | 極快 |
+| 操作         | pip  | uv    |
+| ------------ | ---- | ----- |
+| 安裝 Django  | ~10s | ~0.5s |
+| 建立虛擬環境 | ~3s  | ~0.1s |
+| 解析依賴     | 慢   | 極快  |
 
 ### pipx - 全域工具安裝
 
@@ -1101,15 +1101,15 @@ program.parse();
 
 ### CPython vs PyPy
 
-| 特性 | CPython | PyPy |
-|------|---------|------|
-| 實作語言 | C | Python (RPython) |
-| 官方/預設 | 是 | 否 |
-| 速度 | 基準 | 快 4-10 倍 |
-| 記憶體使用 | 較低 | 較高 |
-| C 擴充相容性 | 完全 | 部分 |
-| 啟動時間 | 快 | 較慢 |
-| 適用場景 | 一般用途 | 長時間運行、CPU 密集 |
+| 特性         | CPython  | PyPy                 |
+| ------------ | -------- | -------------------- |
+| 實作語言     | C        | Python (RPython)     |
+| 官方/預設    | 是       | 否                   |
+| 速度         | 基準     | 快 4-10 倍           |
+| 記憶體使用   | 較低     | 較高                 |
+| C 擴充相容性 | 完全     | 部分                 |
+| 啟動時間     | 快       | 較慢                 |
+| 適用場景     | 一般用途 | 長時間運行、CPU 密集 |
 
 **PyPy 安裝與使用：**
 
@@ -1126,12 +1126,12 @@ pypy3 -m venv venv
 
 ### 與 JavaScript 執行環境對比
 
-| JavaScript | Python |
-|------------|--------|
-| Node.js | CPython |
-| Deno | 無直接對應 |
-| Bun | PyPy（效能優化）|
-| 瀏覽器 | Pyodide（WebAssembly）|
+| JavaScript | Python                 |
+| ---------- | ---------------------- |
+| Node.js    | CPython                |
+| Deno       | 無直接對應             |
+| Bun        | PyPy（效能優化）       |
+| 瀏覽器     | Pyodide（WebAssembly） |
 
 ### Jupyter Notebook - 互動式開發環境
 
@@ -1326,24 +1326,24 @@ mypy src/
 
 ### JavaScript vs Python 工具對照表
 
-| 用途 | JavaScript | Python |
-|------|------------|--------|
-| 套件管理 | npm, yarn, pnpm | pip, poetry, uv |
-| 套件倉庫 | npmjs.com | pypi.org |
-| 設定檔 | package.json | pyproject.toml |
-| 版本管理 | nvm, fnm | pyenv |
-| 執行套件 | npx | pipx |
-| 依賴隔離 | node_modules | venv |
-| 格式化 | Prettier | Black, Ruff |
-| Linting | ESLint | Ruff, flake8, pylint |
-| 型別檢查 | TypeScript | mypy, pyright |
-| 測試 | Jest, Vitest | pytest |
-| HTTP 客戶端 | fetch, axios | requests, httpx |
-| Web 框架 | Express, Fastify, Nest | Flask, FastAPI, Django |
-| ORM | Prisma, TypeORM | SQLAlchemy, Django ORM |
-| CLI 工具 | Commander, yargs | Click, Typer |
-| 任務佇列 | Bull | Celery |
-| 資料處理 | - | pandas, numpy |
+| 用途        | JavaScript             | Python                 |
+| ----------- | ---------------------- | ---------------------- |
+| 套件管理    | npm, yarn, pnpm        | pip, poetry, uv        |
+| 套件倉庫    | npmjs.com              | pypi.org               |
+| 設定檔      | package.json           | pyproject.toml         |
+| 版本管理    | nvm, fnm               | pyenv                  |
+| 執行套件    | npx                    | pipx                   |
+| 依賴隔離    | node_modules           | venv                   |
+| 格式化      | Prettier               | Black, Ruff            |
+| Linting     | ESLint                 | Ruff, flake8, pylint   |
+| 型別檢查    | TypeScript             | mypy, pyright          |
+| 測試        | Jest, Vitest           | pytest                 |
+| HTTP 客戶端 | fetch, axios           | requests, httpx        |
+| Web 框架    | Express, Fastify, Nest | Flask, FastAPI, Django |
+| ORM         | Prisma, TypeORM        | SQLAlchemy, Django ORM |
+| CLI 工具    | Commander, yargs       | Click, Typer           |
+| 任務佇列    | Bull                   | Celery                 |
+| 資料處理    | -                      | pandas, numpy          |
 
 ### 重點回顧
 

@@ -1073,26 +1073,26 @@ class Decorator:
 
 ### 常用內建裝飾器
 
-| 裝飾器 | 模組 | 用途 |
-|--------|------|------|
-| `@property` | 內建 | 將方法變成屬性 |
-| `@staticmethod` | 內建 | 靜態方法 |
-| `@classmethod` | 內建 | 類別方法 |
-| `@lru_cache` | functools | 快取結果 |
-| `@cache` | functools | 無限快取 |
-| `@cached_property` | functools | 快取屬性 |
-| `@total_ordering` | functools | 自動產生比較方法 |
-| `@wraps` | functools | 保留函式資訊 |
-| `@dataclass` | dataclasses | 自動產生類別方法 |
-| `@contextmanager` | contextlib | 建立 context manager |
-| `@abstractmethod` | abc | 抽象方法 |
+| 裝飾器             | 模組        | 用途                 |
+| ------------------ | ----------- | -------------------- |
+| `@property`        | 內建        | 將方法變成屬性       |
+| `@staticmethod`    | 內建        | 靜態方法             |
+| `@classmethod`     | 內建        | 類別方法             |
+| `@lru_cache`       | functools   | 快取結果             |
+| `@cache`           | functools   | 無限快取             |
+| `@cached_property` | functools   | 快取屬性             |
+| `@total_ordering`  | functools   | 自動產生比較方法     |
+| `@wraps`           | functools   | 保留函式資訊         |
+| `@dataclass`       | dataclasses | 自動產生類別方法     |
+| `@contextmanager`  | contextlib  | 建立 context manager |
+| `@abstractmethod`  | abc         | 抽象方法             |
 
 ### 裝飾器 vs JavaScript
 
-| Python | JavaScript | 說明 |
-|--------|------------|------|
-| `@decorator` | 高階函式 | Python 有語法糖 |
-| `@decorator(args)` | 高階函式 | 帶參數 |
-| 類別裝飾器 | 類別裝飾器提案 | ES 提案中 |
-| `@property` | `get/set` | 屬性存取器 |
-| `@staticmethod` | `static` | 靜態方法 |
+| Python             | JavaScript     | 說明            |
+| ------------------ | -------------- | --------------- |
+| `@decorator`       | 高階函式       | Python 有語法糖 |
+| `@decorator(args)` | 高階函式       | 帶參數          |
+| 類別裝飾器         | 類別裝飾器提案 | ES 提案中       |
+| `@property`        | `get/set`      | 屬性存取器      |
+| `@staticmethod`    | `static`       | 靜態方法        |

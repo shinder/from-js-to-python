@@ -32,11 +32,11 @@ if score >= 60:
 
 ### 主要語法差異
 
-| 特性 | JavaScript | Python |
-|------|------------|--------|
-| 條件括號 | 必須 `(condition)` | 不需要 |
-| 程式碼區塊 | 大括號 `{}` | 冒號 `:` + 縮排 |
-| 關鍵字 | `else if` | `elif` |
+| 特性       | JavaScript         | Python          |
+| ---------- | ------------------ | --------------- |
+| 條件括號   | 必須 `(condition)` | 不需要          |
+| 程式碼區塊 | 大括號 `{}`        | 冒號 `:` + 縮排 |
+| 關鍵字     | `else if`          | `elif`          |
 
 ### if-elif-else 完整結構
 
@@ -938,31 +938,31 @@ print(has_negative([1, -2, 3, 4, 5]))  # True
 
 ### 條件判斷對照表
 
-| 特性 | JavaScript | Python |
-|------|------------|--------|
-| 條件語法 | `if (cond) {}` | `if cond:` |
-| 否則如果 | `else if` | `elif` |
-| 三元運算 | `a ? b : c` | `b if a else c` |
+| 特性        | JavaScript      | Python                  |
+| ----------- | --------------- | ----------------------- |
+| 條件語法    | `if (cond) {}`  | `if cond:`              |
+| 否則如果    | `else if`       | `elif`                  |
+| 三元運算    | `a ? b : c`     | `b if a else c`         |
 | switch-case | `switch...case` | `match...case`（3.10+） |
 
 ### 迴圈對照表
 
-| 特性 | JavaScript | Python |
-|------|------------|--------|
-| for-of | `for (x of arr)` | `for x in arr:` |
-| for-in | `for (k in obj)` | `for k in dict:` |
-| 傳統 for | `for (i=0; i<n; i++)` | `for i in range(n):` |
-| forEach | `arr.forEach((x, i) => {})` | `for i, x in enumerate(arr):` |
-| while | `while (cond) {}` | `while cond:` |
+| 特性     | JavaScript                  | Python                        |
+| -------- | --------------------------- | ----------------------------- |
+| for-of   | `for (x of arr)`            | `for x in arr:`               |
+| for-in   | `for (k in obj)`            | `for k in dict:`              |
+| 傳統 for | `for (i=0; i<n; i++)`       | `for i in range(n):`          |
+| forEach  | `arr.forEach((x, i) => {})` | `for i, x in enumerate(arr):` |
+| while    | `while (cond) {}`           | `while cond:`                 |
 
 ### 迴圈控制對照表
 
-| 功能 | JavaScript | Python |
-|------|------------|--------|
-| 跳出迴圈 | `break` | `break` |
-| 跳過迭代 | `continue` | `continue` |
-| 迴圈正常結束 | 無 | `else:` |
-| 空操作 | `{}` 或 `;` | `pass` |
+| 功能         | JavaScript  | Python     |
+| ------------ | ----------- | ---------- |
+| 跳出迴圈     | `break`     | `break`    |
+| 跳過迭代     | `continue`  | `continue` |
+| 迴圈正常結束 | 無          | `else:`    |
+| 空操作       | `{}` 或 `;` | `pass`     |
 
 ### Python 特有功能
 

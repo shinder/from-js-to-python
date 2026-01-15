@@ -1357,23 +1357,23 @@ best = max(sales_with_revenue, key=itemgetter("revenue"))
 
 ### JavaScript vs Python 實用技巧對照表
 
-| 技巧 | JavaScript | Python |
-|------|------------|--------|
-| 陣列解構 | `const [a, b] = arr` | `a, b = arr` |
-| 剩餘元素 | `const [a, ...rest] = arr` | `a, *rest = arr` |
-| 物件解構 | `const {a, b} = obj` | `a, b = obj.values()` |
-| 展開運算子 | `[...arr1, ...arr2]` | `[*arr1, *arr2]` |
-| 字典展開 | `{...obj1, ...obj2}` | `{**obj1, **obj2}` |
-| 資源管理 | try-finally | `with` 語句 |
+| 技巧       | JavaScript                   | Python                       |
+| ---------- | ---------------------------- | ---------------------------- |
+| 陣列解構   | `const [a, b] = arr`         | `a, b = arr`                 |
+| 剩餘元素   | `const [a, ...rest] = arr`   | `a, *rest = arr`             |
+| 物件解構   | `const {a, b} = obj`         | `a, b = obj.values()`        |
+| 展開運算子 | `[...arr1, ...arr2]`         | `[*arr1, *arr2]`             |
+| 字典展開   | `{...obj1, ...obj2}`         | `{**obj1, **obj2}`           |
+| 資源管理   | try-finally                  | `with` 語句                  |
 | 帶索引迭代 | `arr.forEach((v, i) => ...)` | `for i, v in enumerate(arr)` |
-| 並行迭代 | 手動或 lodash | `zip(arr1, arr2)` |
-| 映射 | `arr.map(fn)` | `[fn(x) for x in arr]` |
-| 過濾 | `arr.filter(fn)` | `[x for x in arr if fn(x)]` |
-| 歸約 | `arr.reduce(fn, init)` | `reduce(fn, arr, init)` |
-| 任一滿足 | `arr.some(fn)` | `any(fn(x) for x in arr)` |
-| 全部滿足 | `arr.every(fn)` | `all(fn(x) for x in arr)` |
-| 字串模板 | `` `${var}` `` | `f"{var}"` |
-| 路徑處理 | `path.join()` | `Path() / "dir"` |
+| 並行迭代   | 手動或 lodash                | `zip(arr1, arr2)`            |
+| 映射       | `arr.map(fn)`                | `[fn(x) for x in arr]`       |
+| 過濾       | `arr.filter(fn)`             | `[x for x in arr if fn(x)]`  |
+| 歸約       | `arr.reduce(fn, init)`       | `reduce(fn, arr, init)`      |
+| 任一滿足   | `arr.some(fn)`               | `any(fn(x) for x in arr)`    |
+| 全部滿足   | `arr.every(fn)`              | `all(fn(x) for x in arr)`    |
+| 字串模板   | `` `${var}` ``               | `f"{var}"`                   |
+| 路徑處理   | `path.join()`                | `Path() / "dir"`             |
 
 ### 重點回顧
 

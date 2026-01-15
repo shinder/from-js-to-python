@@ -8,16 +8,16 @@
 
 ### 型別對照總覽
 
-| JavaScript | Python | 說明 |
-|------------|--------|------|
-| `number` | `int`, `float` | Python 區分整數與浮點數 |
-| `bigint` | `int` | Python 的 int 原生支援大數 |
-| `string` | `str` | 字串 |
-| `boolean` | `bool` | 布林值（注意大小寫差異） |
-| `null` | `None` | 空值 |
-| `undefined` | 無對應 | Python 變數必須先賦值 |
-| `symbol` | 無直接對應 | 可用其他方式模擬 |
-| `object` | `dict`, `list`, `class` 等 | Python 有更多細分型別 |
+| JavaScript  | Python                     | 說明                       |
+| ----------- | -------------------------- | -------------------------- |
+| `number`    | `int`, `float`             | Python 區分整數與浮點數    |
+| `bigint`    | `int`                      | Python 的 int 原生支援大數 |
+| `string`    | `str`                      | 字串                       |
+| `boolean`   | `bool`                     | 布林值（注意大小寫差異）   |
+| `null`      | `None`                     | 空值                       |
+| `undefined` | 無對應                     | Python 變數必須先賦值      |
+| `symbol`    | 無直接對應                 | 可用其他方式模擬           |
+| `object`    | `dict`, `list`, `class` 等 | Python 有更多細分型別      |
 
 ---
 
@@ -165,10 +165,10 @@ no = False
 #### 布林運算子
 
 | JavaScript | Python | 說明 |
-|------------|--------|------|
-| `&&` | `and` | 且 |
-| `\|\|` | `or` | 或 |
-| `!` | `not` | 非 |
+| ---------- | ------ | ---- |
+| `&&`       | `and`  | 且   |
+| `\|\|`     | `or`   | 或   |
+| `!`        | `not`  | 非   |
 
 ```python
 a = True
@@ -733,15 +733,15 @@ if "hello":             # 非空字串自動轉為 True
 
 ### JavaScript vs Python 型別轉換對照
 
-| 目的 | JavaScript | Python |
-|------|------------|--------|
-| 轉整數 | `parseInt(x)` | `int(x)` |
-| 轉浮點數 | `parseFloat(x)` | `float(x)` |
-| 轉字串 | `String(x)` 或 `x.toString()` | `str(x)` |
-| 轉布林 | `Boolean(x)` 或 `!!x` | `bool(x)` |
-| 轉陣列 | `Array.from(x)` 或 `[...x]` | `list(x)` |
-| JSON 解析 | `JSON.parse(x)` | `json.loads(x)` |
-| JSON 序列化 | `JSON.stringify(x)` | `json.dumps(x)` |
+| 目的        | JavaScript                    | Python          |
+| ----------- | ----------------------------- | --------------- |
+| 轉整數      | `parseInt(x)`                 | `int(x)`        |
+| 轉浮點數    | `parseFloat(x)`               | `float(x)`      |
+| 轉字串      | `String(x)` 或 `x.toString()` | `str(x)`        |
+| 轉布林      | `Boolean(x)` 或 `!!x`         | `bool(x)`       |
+| 轉陣列      | `Array.from(x)` 或 `[...x]`   | `list(x)`       |
+| JSON 解析   | `JSON.parse(x)`               | `json.loads(x)` |
+| JSON 序列化 | `JSON.stringify(x)`           | `json.dumps(x)` |
 
 ```python
 import json
@@ -817,27 +817,27 @@ print(is_falsy("hello"))  # False
 
 ### 型別系統差異
 
-| 特性 | JavaScript | Python |
-|------|------------|--------|
-| 數值型別 | `number`, `bigint` | `int`, `float`, `complex` |
-| 整數大小 | 有限制（需 BigInt） | 無限制 |
-| 布林值 | `true`, `false` | `True`, `False` |
-| 空值 | `null`, `undefined` | `None` |
-| 空陣列/物件 | Truthy | Falsy |
-| 型別檢查 | `typeof`, `instanceof` | `type()`, `isinstance()` |
+| 特性        | JavaScript             | Python                    |
+| ----------- | ---------------------- | ------------------------- |
+| 數值型別    | `number`, `bigint`     | `int`, `float`, `complex` |
+| 整數大小    | 有限制（需 BigInt）    | 無限制                    |
+| 布林值      | `true`, `false`        | `True`, `False`           |
+| 空值        | `null`, `undefined`    | `None`                    |
+| 空陣列/物件 | Truthy                 | Falsy                     |
+| 型別檢查    | `typeof`, `instanceof` | `type()`, `isinstance()`  |
 
 ### 型別轉換函式
 
-| 目標型別 | Python 函式 | 注意事項 |
-|----------|-------------|----------|
-| 整數 | `int()` | 浮點數會截斷，非四捨五入 |
-| 浮點數 | `float()` | 支援科學記號、inf、nan |
-| 字串 | `str()` | 幾乎所有物件都可轉換 |
-| 布林值 | `bool()` | 空容器為 False |
-| 列表 | `list()` | 可從任何可迭代物件轉換 |
-| 元組 | `tuple()` | 不可變序列 |
-| 集合 | `set()` | 自動去除重複 |
-| 字典 | `dict()` | 需要鍵值對結構 |
+| 目標型別 | Python 函式 | 注意事項                 |
+| -------- | ----------- | ------------------------ |
+| 整數     | `int()`     | 浮點數會截斷，非四捨五入 |
+| 浮點數   | `float()`   | 支援科學記號、inf、nan   |
+| 字串     | `str()`     | 幾乎所有物件都可轉換     |
+| 布林值   | `bool()`    | 空容器為 False           |
+| 列表     | `list()`    | 可從任何可迭代物件轉換   |
+| 元組     | `tuple()`   | 不可變序列               |
+| 集合     | `set()`     | 自動去除重複             |
+| 字典     | `dict()`    | 需要鍵值對結構           |
 
 ### 最佳實踐
 

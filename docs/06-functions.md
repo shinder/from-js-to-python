@@ -1102,15 +1102,15 @@ print(process(5))  # ((5 + 1) * 2) ** 2 = 144
 
 ### 函式語法對照表
 
-| 特性 | JavaScript | Python |
-|------|------------|--------|
-| 定義 | `function f() {}` | `def f():` |
-| 箭頭/Lambda | `(x) => x * 2` | `lambda x: x * 2` |
-| 預設參數 | `function f(x = 1)` | `def f(x=1):` |
-| 剩餘參數 | `...args` | `*args` |
-| 關鍵字參數 | 無原生支援 | `**kwargs` |
-| 展開 | `f(...arr)` | `f(*arr)` |
-| 回傳多值 | 回傳物件/陣列 | `return a, b` |
+| 特性        | JavaScript          | Python            |
+| ----------- | ------------------- | ----------------- |
+| 定義        | `function f() {}`   | `def f():`        |
+| 箭頭/Lambda | `(x) => x * 2`      | `lambda x: x * 2` |
+| 預設參數    | `function f(x = 1)` | `def f(x=1):`     |
+| 剩餘參數    | `...args`           | `*args`           |
+| 關鍵字參數  | 無原生支援          | `**kwargs`        |
+| 展開        | `f(...arr)`         | `f(*arr)`         |
+| 回傳多值    | 回傳物件/陣列       | `return a, b`     |
 
 ### 參數類型總覽
 

@@ -504,7 +504,7 @@ def api_handler(func):
 
 ### 例外階層圖
 
-```
+```txt
 BaseException
 ├── SystemExit                 # sys.exit() 呼叫
 ├── KeyboardInterrupt          # Ctrl+C 中斷
@@ -1031,14 +1031,14 @@ def retry(max_attempts=3, exceptions=(Exception,)):
 
 ### JavaScript vs Python 例外處理對照
 
-| 特性 | JavaScript | Python |
-|------|------------|--------|
-| 捕捉例外 | `try...catch` | `try...except` |
-| 最終執行 | `finally` | `finally` |
-| 拋出例外 | `throw new Error()` | `raise Exception()` |
-| 無例外時 | 無 | `else` |
-| 例外類型 | `Error`, `TypeError`, ... | `Exception`, `TypeError`, ... |
-| 自訂例外 | `class MyError extends Error` | `class MyError(Exception)` |
+| 特性     | JavaScript                    | Python                        |
+| -------- | ----------------------------- | ----------------------------- |
+| 捕捉例外 | `try...catch`                 | `try...except`                |
+| 最終執行 | `finally`                     | `finally`                     |
+| 拋出例外 | `throw new Error()`           | `raise Exception()`           |
+| 無例外時 | 無                            | `else`                        |
+| 例外類型 | `Error`, `TypeError`, ...     | `Exception`, `TypeError`, ... |
+| 自訂例外 | `class MyError extends Error` | `class MyError(Exception)`    |
 
 ### try 語句結構
 

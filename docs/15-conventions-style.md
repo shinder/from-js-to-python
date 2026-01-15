@@ -6,16 +6,16 @@ Python 社群非常重視程式碼風格的一致性，有句名言：「程式�
 
 ### JavaScript vs Python 風格概覽
 
-| 面向 | JavaScript | Python |
-|------|------------|--------|
-| 風格指南 | Airbnb, Standard, Google | PEP 8 |
-| 變數/函式命名 | camelCase | snake_case |
-| 類別命名 | PascalCase | PascalCase |
-| 常數命名 | UPPER_CASE | UPPER_CASE |
-| 縮排 | 2 或 4 空格 | 4 空格（強制）|
-| 行長度 | 80-120 | 79-88 |
-| 分號 | 可選 | 無 |
-| 引號 | 單引號或雙引號 | 單引號或雙引號 |
+| 面向          | JavaScript               | Python         |
+| ------------- | ------------------------ | -------------- |
+| 風格指南      | Airbnb, Standard, Google | PEP 8          |
+| 變數/函式命名 | camelCase                | snake_case     |
+| 類別命名      | PascalCase               | PascalCase     |
+| 常數命名      | UPPER_CASE               | UPPER_CASE     |
+| 縮排          | 2 或 4 空格              | 4 空格（強制） |
+| 行長度        | 80-120                   | 79-88          |
+| 分號          | 可選                     | 無             |
+| 引號          | 單引號或雙引號           | 單引號或雙引號 |
 
 ---
 
@@ -136,13 +136,13 @@ class User:
 
 **底線命名規則：**
 
-| 命名 | 意義 | 存取性 |
-|------|------|--------|
-| `name` | 公開 | 完全公開 |
-| `_name` | 受保護（protected）| 可存取，但表示「內部使用」|
-| `__name` | 私有（name mangling）| 被修飾為 `_ClassName__name` |
-| `__name__` | 魔術方法/屬性 | 系統保留，不要自行定義 |
-| `name_` | 避免關鍵字衝突 | `class_`, `type_`, `id_` |
+| 命名       | 意義                  | 存取性                      |
+| ---------- | --------------------- | --------------------------- |
+| `name`     | 公開                  | 完全公開                    |
+| `_name`    | 受保護（protected）   | 可存取，但表示「內部使用」  |
+| `__name`   | 私有（name mangling） | 被修飾為 `_ClassName__name` |
+| `__name__` | 魔術方法/屬性         | 系統保留，不要自行定義      |
+| `name_`    | 避免關鍵字衝突        | `class_`, `type_`, `id_`    |
 
 對比 JavaScript：
 
@@ -1335,18 +1335,18 @@ def my_function(arg1, arg2):
 
 ### JavaScript vs Python 風格對照表
 
-| 項目 | JavaScript | Python |
-|------|------------|--------|
-| 變數命名 | `camelCase` | `snake_case` |
-| 函式命名 | `camelCase` | `snake_case` |
-| 類別命名 | `PascalCase` | `PascalCase` |
-| 常數命名 | `UPPER_CASE` | `UPPER_CASE` |
-| 私有成員 | `#name` 或 `_name` | `_name` 或 `__name` |
-| 縮排 | 2 或 4 空格 | 4 空格（強制）|
-| 分號 | 可選 | 無 |
-| 文件註解 | JSDoc (`/** */`) | Docstring (`"""`) |
-| 風格檢查 | ESLint | Ruff, flake8, pylint |
-| 格式化 | Prettier | Black, Ruff |
+| 項目     | JavaScript         | Python               |
+| -------- | ------------------ | -------------------- |
+| 變數命名 | `camelCase`        | `snake_case`         |
+| 函式命名 | `camelCase`        | `snake_case`         |
+| 類別命名 | `PascalCase`       | `PascalCase`         |
+| 常數命名 | `UPPER_CASE`       | `UPPER_CASE`         |
+| 私有成員 | `#name` 或 `_name` | `_name` 或 `__name`  |
+| 縮排     | 2 或 4 空格        | 4 空格（強制）       |
+| 分號     | 可選               | 無                   |
+| 文件註解 | JSDoc (`/** */`)   | Docstring (`"""`)    |
+| 風格檢查 | ESLint             | Ruff, flake8, pylint |
+| 格式化   | Prettier           | Black, Ruff          |
 
 ### 重點回顧
 

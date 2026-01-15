@@ -107,24 +107,24 @@ print(nums)           # [1, 4, 5]
 
 ### 列表方法對照表
 
-| 操作 | JavaScript | Python |
-|------|------------|--------|
-| 新增到尾端 | `arr.push(x)` | `arr.append(x)` |
-| 新增多個到尾端 | `arr.push(a, b, c)` | `arr.extend([a, b, c])` |
-| 移除尾端 | `arr.pop()` | `arr.pop()` |
-| 新增到開頭 | `arr.unshift(x)` | `arr.insert(0, x)` |
-| 移除開頭 | `arr.shift()` | `arr.pop(0)` |
-| 插入 | `arr.splice(i, 0, x)` | `arr.insert(i, x)` |
-| 移除指定索引 | `arr.splice(i, 1)` | `arr.pop(i)` 或 `del arr[i]` |
-| 移除指定值 | 需手動 | `arr.remove(x)` |
-| 尋找索引 | `arr.indexOf(x)` | `arr.index(x)` |
-| 包含檢查 | `arr.includes(x)` | `x in arr` |
-| 長度 | `arr.length` | `len(arr)` |
-| 排序 | `arr.sort()` | `arr.sort()` |
-| 反轉 | `arr.reverse()` | `arr.reverse()` |
-| 複製 | `[...arr]` | `arr.copy()` 或 `arr[:]` |
-| 合併 | `[...a, ...b]` | `a + b` 或 `[*a, *b]` |
-| 清空 | `arr.length = 0` | `arr.clear()` |
+| 操作           | JavaScript            | Python                       |
+| -------------- | --------------------- | ---------------------------- |
+| 新增到尾端     | `arr.push(x)`         | `arr.append(x)`              |
+| 新增多個到尾端 | `arr.push(a, b, c)`   | `arr.extend([a, b, c])`      |
+| 移除尾端       | `arr.pop()`           | `arr.pop()`                  |
+| 新增到開頭     | `arr.unshift(x)`      | `arr.insert(0, x)`           |
+| 移除開頭       | `arr.shift()`         | `arr.pop(0)`                 |
+| 插入           | `arr.splice(i, 0, x)` | `arr.insert(i, x)`           |
+| 移除指定索引   | `arr.splice(i, 1)`    | `arr.pop(i)` 或 `del arr[i]` |
+| 移除指定值     | 需手動                | `arr.remove(x)`              |
+| 尋找索引       | `arr.indexOf(x)`      | `arr.index(x)`               |
+| 包含檢查       | `arr.includes(x)`     | `x in arr`                   |
+| 長度           | `arr.length`          | `len(arr)`                   |
+| 排序           | `arr.sort()`          | `arr.sort()`                 |
+| 反轉           | `arr.reverse()`       | `arr.reverse()`              |
+| 複製           | `[...arr]`            | `arr.copy()` 或 `arr[:]`     |
+| 合併           | `[...a, ...b]`        | `a + b` 或 `[*a, *b]`        |
+| 清空           | `arr.length = 0`      | `arr.clear()`                |
 
 ### 列表方法詳解
 
@@ -430,18 +430,18 @@ print(person["city"])         # "Unknown"
 
 ### 字典方法對照表
 
-| 操作 | JavaScript | Python |
-|------|------------|--------|
-| 取值 | `obj.key` 或 `obj["key"]` | `dict["key"]` |
+| 操作     | JavaScript                         | Python                     |
+| -------- | ---------------------------------- | -------------------------- |
+| 取值     | `obj.key` 或 `obj["key"]`          | `dict["key"]`              |
 | 安全取值 | `obj?.key` 或 `obj.key ?? default` | `dict.get("key", default)` |
-| 設值 | `obj.key = value` | `dict["key"] = value` |
-| 刪除 | `delete obj.key` | `del dict["key"]` |
-| 所有鍵 | `Object.keys(obj)` | `dict.keys()` |
-| 所有值 | `Object.values(obj)` | `dict.values()` |
-| 鍵值對 | `Object.entries(obj)` | `dict.items()` |
-| 包含鍵 | `"key" in obj` | `"key" in dict` |
-| 合併 | `{...a, ...b}` | `{**a, **b}` 或 `a \| b` |
-| 長度 | `Object.keys(obj).length` | `len(dict)` |
+| 設值     | `obj.key = value`                  | `dict["key"] = value`      |
+| 刪除     | `delete obj.key`                   | `del dict["key"]`          |
+| 所有鍵   | `Object.keys(obj)`                 | `dict.keys()`              |
+| 所有值   | `Object.values(obj)`               | `dict.values()`            |
+| 鍵值對   | `Object.entries(obj)`              | `dict.items()`             |
+| 包含鍵   | `"key" in obj`                     | `"key" in dict`            |
+| 合併     | `{...a, ...b}`                     | `{**a, **b}` 或 `a \| b`   |
+| 長度     | `Object.keys(obj).length`          | `len(dict)`                |
 
 ### 字典方法詳解
 
@@ -711,13 +711,13 @@ print(x, z)         # 1 3
 
 ### Tuple vs List
 
-| 特性 | Tuple | List |
-|------|-------|------|
-| 可變性 | 不可變 | 可變 |
-| 語法 | `()` | `[]` |
-| 效能 | 較快、較省記憶體 | 較慢、較佔記憶體 |
-| 可作為 dict 鍵 | 可以 | 不可以 |
-| 使用場景 | 固定結構資料 | 動態集合資料 |
+| 特性           | Tuple            | List             |
+| -------------- | ---------------- | ---------------- |
+| 可變性         | 不可變           | 可變             |
+| 語法           | `()`             | `[]`             |
+| 效能           | 較快、較省記憶體 | 較慢、較佔記憶體 |
+| 可作為 dict 鍵 | 可以             | 不可以           |
+| 使用場景       | 固定結構資料     | 動態集合資料     |
 
 ```python
 # Tuple 可作為字典鍵
@@ -884,15 +884,15 @@ print(x.isdisjoint(y))    # True（沒有共同元素）
 
 ### 集合運算對照表
 
-| 運算 | 運算子 | 方法 | 說明 |
-|------|--------|------|------|
-| 聯集 | `a \| b` | `a.union(b)` | 所有元素 |
-| 交集 | `a & b` | `a.intersection(b)` | 共同元素 |
-| 差集 | `a - b` | `a.difference(b)` | 在 a 但不在 b |
-| 對稱差集 | `a ^ b` | `a.symmetric_difference(b)` | 只在其中一個 |
-| 子集 | `a <= b` | `a.issubset(b)` | a 的元素都在 b 中 |
-| 超集 | `a >= b` | `a.issuperset(b)` | b 的元素都在 a 中 |
-| 不相交 | - | `a.isdisjoint(b)` | 沒有共同元素 |
+| 運算     | 運算子   | 方法                        | 說明              |
+| -------- | -------- | --------------------------- | ----------------- |
+| 聯集     | `a \| b` | `a.union(b)`                | 所有元素          |
+| 交集     | `a & b`  | `a.intersection(b)`         | 共同元素          |
+| 差集     | `a - b`  | `a.difference(b)`           | 在 a 但不在 b     |
+| 對稱差集 | `a ^ b`  | `a.symmetric_difference(b)` | 只在其中一個      |
+| 子集     | `a <= b` | `a.issubset(b)`             | a 的元素都在 b 中 |
+| 超集     | `a >= b` | `a.issuperset(b)`           | b 的元素都在 a 中 |
+| 不相交   | -        | `a.isdisjoint(b)`           | 沒有共同元素      |
 
 ### frozenset（不可變集合）
 
@@ -998,37 +998,37 @@ list2 = [4, 5, 6, 7, 8, 8]
 
 ### 資料結構選擇指南
 
-| 需求 | 推薦結構 |
-|------|----------|
-| 有序、可變、允許重複 | `list` |
-| 有序、不可變、允許重複 | `tuple` |
-| 無序、可變、不允許重複 | `set` |
-| 無序、不可變、不允許重複 | `frozenset` |
-| 鍵值對映射 | `dict` |
-| 計數 | `collections.Counter` |
-| 預設值字典 | `collections.defaultdict` |
-| 有序字典（Python 3.7+ dict 已有序） | `dict` |
+| 需求                                | 推薦結構                  |
+| ----------------------------------- | ------------------------- |
+| 有序、可變、允許重複                | `list`                    |
+| 有序、不可變、允許重複              | `tuple`                   |
+| 無序、可變、不允許重複              | `set`                     |
+| 無序、不可變、不允許重複            | `frozenset`               |
+| 鍵值對映射                          | `dict`                    |
+| 計數                                | `collections.Counter`     |
+| 預設值字典                          | `collections.defaultdict` |
+| 有序字典（Python 3.7+ dict 已有序） | `dict`                    |
 
 ### JavaScript vs Python 對照
 
-| JavaScript | Python | 說明 |
-|------------|--------|------|
-| `Array` | `list` | 有序可變序列 |
-| `Object` | `dict` | 鍵值對映射 |
-| `Set` | `set` | 不重複集合 |
-| `Object.freeze([])` | `tuple` | 不可變序列 |
-| `Map` | `dict` | Python dict 更常用 |
-| - | `frozenset` | 不可變集合 |
+| JavaScript          | Python      | 說明               |
+| ------------------- | ----------- | ------------------ |
+| `Array`             | `list`      | 有序可變序列       |
+| `Object`            | `dict`      | 鍵值對映射         |
+| `Set`               | `set`       | 不重複集合         |
+| `Object.freeze([])` | `tuple`     | 不可變序列         |
+| `Map`               | `dict`      | Python dict 更常用 |
+| -                   | `frozenset` | 不可變集合         |
 
 ### 效能考量
 
-| 操作 | list | dict | set |
-|------|------|------|-----|
-| 索引存取 | O(1) | - | - |
-| 鍵存取 | - | O(1) | - |
-| 搜尋 | O(n) | O(1) | O(1) |
-| 新增 | O(1)* | O(1) | O(1) |
-| 刪除 | O(n) | O(1) | O(1) |
-| 成員檢查 | O(n) | O(1) | O(1) |
+| 操作     | list  | dict | set  |
+| -------- | ----- | ---- | ---- |
+| 索引存取 | O(1)  | -    | -    |
+| 鍵存取   | -     | O(1) | -    |
+| 搜尋     | O(n)  | O(1) | O(1) |
+| 新增     | O(1)* | O(1) | O(1) |
+| 刪除     | O(n)  | O(1) | O(1) |
+| 成員檢查 | O(n)  | O(1) | O(1) |
 
 *list.append() 是 O(1)，但 insert(0, x) 是 O(n)

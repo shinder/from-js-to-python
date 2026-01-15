@@ -8,14 +8,14 @@
 
 ### JavaScript vs Python 匯入對照
 
-| JavaScript | Python | 說明 |
-|------------|--------|------|
-| `import x from 'mod'` | `from mod import x` | 匯入特定項目 |
-| `import { a, b } from 'mod'` | `from mod import a, b` | 匯入多個項目 |
-| `import * as mod from 'mod'` | `import mod` | 匯入整個模組 |
-| `import 'mod'` | `import mod` | 匯入模組（副作用） |
-| `export default x` | 無直接對應 | Python 無預設匯出 |
-| `export { x, y }` | 自動匯出所有公開成員 | Python 不需要 export |
+| JavaScript                   | Python                 | 說明                 |
+| ---------------------------- | ---------------------- | -------------------- |
+| `import x from 'mod'`        | `from mod import x`    | 匯入特定項目         |
+| `import { a, b } from 'mod'` | `from mod import a, b` | 匯入多個項目         |
+| `import * as mod from 'mod'` | `import mod`           | 匯入整個模組         |
+| `import 'mod'`               | `import mod`           | 匯入模組（副作用）   |
+| `export default x`           | 無直接對應             | Python 無預設匯出    |
+| `export { x, y }`            | 自動匯出所有公開成員   | Python 不需要 export |
 
 ### import 語句
 
@@ -383,7 +383,7 @@ if __name__ == "__main__":
 
 ### 套件的 `__main__.py`
 
-```
+```txt
 my_package/
 ├── __init__.py
 ├── __main__.py      # python -m my_package 時執行
@@ -1033,21 +1033,21 @@ pip install requests
 
 ### 常用第三方套件列表
 
-| 用途 | 套件 | 說明 |
-|------|------|------|
-| HTTP 請求 | `requests` | 簡單的 HTTP 函式庫 |
-| HTTP 客戶端 | `httpx` | 支援 async 的 HTTP 函式庫 |
-| Web 框架 | `Flask` | 輕量級 Web 框架 |
-| Web 框架 | `FastAPI` | 現代 async Web 框架 |
-| Web 框架 | `Django` | 全功能 Web 框架 |
-| 測試 | `pytest` | 測試框架 |
-| 程式碼格式化 | `black` | 程式碼格式化工具 |
-| Linting | `ruff` | 快速的 linter |
-| 型別檢查 | `mypy` | 靜態型別檢查 |
-| 資料處理 | `pandas` | 資料分析 |
-| 數值計算 | `numpy` | 數值計算 |
-| ORM | `SQLAlchemy` | 資料庫 ORM |
-| 環境變數 | `python-dotenv` | 載入 .env 檔案 |
+| 用途         | 套件            | 說明                      |
+| ------------ | --------------- | ------------------------- |
+| HTTP 請求    | `requests`      | 簡單的 HTTP 函式庫        |
+| HTTP 客戶端  | `httpx`         | 支援 async 的 HTTP 函式庫 |
+| Web 框架     | `Flask`         | 輕量級 Web 框架           |
+| Web 框架     | `FastAPI`       | 現代 async Web 框架       |
+| Web 框架     | `Django`        | 全功能 Web 框架           |
+| 測試         | `pytest`        | 測試框架                  |
+| 程式碼格式化 | `black`         | 程式碼格式化工具          |
+| Linting      | `ruff`          | 快速的 linter             |
+| 型別檢查     | `mypy`          | 靜態型別檢查              |
+| 資料處理     | `pandas`        | 資料分析                  |
+| 數值計算     | `numpy`         | 數值計算                  |
+| ORM          | `SQLAlchemy`    | 資料庫 ORM                |
+| 環境變數     | `python-dotenv` | 載入 .env 檔案            |
 
 ---
 
@@ -1057,7 +1057,7 @@ pip install requests
 
 建立一個計算工具套件：
 
-```
+```txt
 calculator/
 ├── __init__.py
 ├── basic.py      # add, subtract, multiply, divide
@@ -1079,29 +1079,29 @@ calculator/
 
 ### 匯入方式對照
 
-| 方式 | 語法 | 使用情境 |
-|------|------|----------|
-| 匯入模組 | `import module` | 需要使用模組的多個功能 |
-| 匯入特定項目 | `from module import item` | 只需要少數幾個功能 |
-| 匯入並取別名 | `import module as m` | 模組名稱太長 |
-| 相對匯入 | `from . import module` | 套件內部匯入 |
+| 方式         | 語法                      | 使用情境               |
+| ------------ | ------------------------- | ---------------------- |
+| 匯入模組     | `import module`           | 需要使用模組的多個功能 |
+| 匯入特定項目 | `from module import item` | 只需要少數幾個功能     |
+| 匯入並取別名 | `import module as m`      | 模組名稱太長           |
+| 相對匯入     | `from . import module`    | 套件內部匯入           |
 
 ### 常用標準函式庫
 
-| 類別 | 模組 |
-|------|------|
-| 檔案/路徑 | `os`, `pathlib`, `shutil` |
-| 系統 | `sys`, `subprocess` |
-| 資料格式 | `json`, `csv`, `xml` |
-| 日期時間 | `datetime`, `time`, `calendar` |
-| 文字處理 | `re`, `string`, `textwrap` |
-| 資料結構 | `collections`, `heapq`, `bisect` |
-| 函式工具 | `functools`, `itertools`, `operator` |
-| 網路 | `urllib`, `http`, `socket` |
-| 並行處理 | `threading`, `multiprocessing`, `asyncio` |
-| 測試 | `unittest`, `doctest` |
-| 日誌 | `logging` |
-| 命令列 | `argparse` |
+| 類別      | 模組                                      |
+| --------- | ----------------------------------------- |
+| 檔案/路徑 | `os`, `pathlib`, `shutil`                 |
+| 系統      | `sys`, `subprocess`                       |
+| 資料格式  | `json`, `csv`, `xml`                      |
+| 日期時間  | `datetime`, `time`, `calendar`            |
+| 文字處理  | `re`, `string`, `textwrap`                |
+| 資料結構  | `collections`, `heapq`, `bisect`          |
+| 函式工具  | `functools`, `itertools`, `operator`      |
+| 網路      | `urllib`, `http`, `socket`                |
+| 並行處理  | `threading`, `multiprocessing`, `asyncio` |
+| 測試      | `unittest`, `doctest`                     |
+| 日誌      | `logging`                                 |
+| 命令列    | `argparse`                                |
 
 ### JavaScript vs Python 匯入
 

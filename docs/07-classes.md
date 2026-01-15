@@ -44,12 +44,12 @@ print(person.greet())  # "Hello, I'm Alice"
 
 ### 主要語法差異
 
-| 特性 | JavaScript | Python |
-|------|------------|--------|
-| 建構子 | `constructor()` | `__init__()` |
-| 實例參考 | `this` | `self`（必須明確宣告） |
-| 建立實例 | `new ClassName()` | `ClassName()` |
-| 方法定義 | `method() {}` | `def method(self):` |
+| 特性     | JavaScript        | Python                 |
+| -------- | ----------------- | ---------------------- |
+| 建構子   | `constructor()`   | `__init__()`           |
+| 實例參考 | `this`            | `self`（必須明確宣告） |
+| 建立實例 | `new ClassName()` | `ClassName()`          |
+| 方法定義 | `method() {}`     | `def method(self):`    |
 
 ### __init__ 方法（建構子）
 
@@ -694,12 +694,12 @@ print(obj._MyClass__private_method())  # "private method"
 
 ### 存取控制對照表
 
-| 命名 | 存取範圍 | 說明 |
-|------|----------|------|
-| `name` | 公開 | 任何地方都可存取 |
-| `_name` | Protected（慣例） | 可存取，但慣例上只在類別內部和子類別使用 |
-| `__name` | Private（name mangling） | 變成 `_ClassName__name`，較難存取 |
-| `__name__` | 特殊方法 | Python 內部使用，如 `__init__`、`__str__` |
+| 命名       | 存取範圍                 | 說明                                      |
+| ---------- | ------------------------ | ----------------------------------------- |
+| `name`     | 公開                     | 任何地方都可存取                          |
+| `_name`    | Protected（慣例）        | 可存取，但慣例上只在類別內部和子類別使用  |
+| `__name`   | Private（name mangling） | 變成 `_ClassName__name`，較難存取         |
+| `__name__` | 特殊方法                 | Python 內部使用，如 `__init__`、`__str__` |
 
 ### Name Mangling 的用途
 
@@ -1155,30 +1155,30 @@ with DatabaseConnection("localhost:5432") as db:
 
 ### 特殊方法總覽
 
-| 方法 | 觸發方式 | 說明 |
-|------|----------|------|
-| `__init__` | `ClassName()` | 初始化 |
-| `__del__` | 物件被刪除時 | 解構子 |
-| `__str__` | `str()`, `print()` | 使用者友善字串 |
-| `__repr__` | `repr()` | 開發者字串 |
-| `__len__` | `len()` | 長度 |
-| `__getitem__` | `obj[key]` | 取得項目 |
-| `__setitem__` | `obj[key] = value` | 設定項目 |
-| `__delitem__` | `del obj[key]` | 刪除項目 |
-| `__contains__` | `in` | 成員檢查 |
-| `__iter__` | `iter()`, `for` | 迭代 |
-| `__next__` | `next()` | 下一個元素 |
-| `__call__` | `obj()` | 呼叫物件 |
-| `__enter__` | `with` | 進入上下文 |
-| `__exit__` | `with` | 離開上下文 |
-| `__eq__` | `==` | 相等 |
-| `__lt__` | `<` | 小於 |
-| `__add__` | `+` | 加法 |
-| `__sub__` | `-` | 減法 |
-| `__mul__` | `*` | 乘法 |
-| `__truediv__` | `/` | 除法 |
-| `__hash__` | `hash()` | 雜湊值 |
-| `__bool__` | `bool()` | 布林轉換 |
+| 方法           | 觸發方式           | 說明           |
+| -------------- | ------------------ | -------------- |
+| `__init__`     | `ClassName()`      | 初始化         |
+| `__del__`      | 物件被刪除時       | 解構子         |
+| `__str__`      | `str()`, `print()` | 使用者友善字串 |
+| `__repr__`     | `repr()`           | 開發者字串     |
+| `__len__`      | `len()`            | 長度           |
+| `__getitem__`  | `obj[key]`         | 取得項目       |
+| `__setitem__`  | `obj[key] = value` | 設定項目       |
+| `__delitem__`  | `del obj[key]`     | 刪除項目       |
+| `__contains__` | `in`               | 成員檢查       |
+| `__iter__`     | `iter()`, `for`    | 迭代           |
+| `__next__`     | `next()`           | 下一個元素     |
+| `__call__`     | `obj()`            | 呼叫物件       |
+| `__enter__`    | `with`             | 進入上下文     |
+| `__exit__`     | `with`             | 離開上下文     |
+| `__eq__`       | `==`               | 相等           |
+| `__lt__`       | `<`                | 小於           |
+| `__add__`      | `+`                | 加法           |
+| `__sub__`      | `-`                | 減法           |
+| `__mul__`      | `*`                | 乘法           |
+| `__truediv__`  | `/`                | 除法           |
+| `__hash__`     | `hash()`           | 雜湊值         |
+| `__bool__`     | `bool()`           | 布林轉換       |
 
 ---
 
@@ -1301,32 +1301,32 @@ print(list(combined))       # [1, 2, 3, 4, 5, 6]
 
 ### JavaScript vs Python 類別對照
 
-| 特性 | JavaScript | Python |
-|------|------------|--------|
-| 類別定義 | `class Name {}` | `class Name:` |
-| 建構子 | `constructor()` | `__init__(self)` |
-| 實例參考 | `this` | `self` |
-| 建立實例 | `new Class()` | `Class()` |
-| 繼承 | `extends` | `class Child(Parent):` |
-| 呼叫父類別 | `super.method()` | `super().method()` |
-| 靜態方法 | `static method()` | `@staticmethod` |
-| Getter/Setter | `get/set` | `@property` |
-| 私有 | `#field` | `__field`（name mangling） |
+| 特性          | JavaScript        | Python                     |
+| ------------- | ----------------- | -------------------------- |
+| 類別定義      | `class Name {}`   | `class Name:`              |
+| 建構子        | `constructor()`   | `__init__(self)`           |
+| 實例參考      | `this`            | `self`                     |
+| 建立實例      | `new Class()`     | `Class()`                  |
+| 繼承          | `extends`         | `class Child(Parent):`     |
+| 呼叫父類別    | `super.method()`  | `super().method()`         |
+| 靜態方法      | `static method()` | `@staticmethod`            |
+| Getter/Setter | `get/set`         | `@property`                |
+| 私有          | `#field`          | `__field`（name mangling） |
 
 ### 存取修飾符
 
-| Python | 說明 | JavaScript 對應 |
-|--------|------|-----------------|
-| `name` | 公開 | `name` |
-| `_name` | Protected（慣例） | 無直接對應 |
-| `__name` | Private（name mangling） | `#name` |
+| Python   | 說明                     | JavaScript 對應 |
+| -------- | ------------------------ | --------------- |
+| `name`   | 公開                     | `name`          |
+| `_name`  | Protected（慣例）        | 無直接對應      |
+| `__name` | Private（name mangling） | `#name`         |
 
 ### 常用特殊方法
 
-| 類別 | 方法 |
-|------|------|
-| 基本 | `__init__`, `__str__`, `__repr__` |
-| 比較 | `__eq__`, `__lt__`, `__gt__`, `__le__`, `__ge__` |
-| 算術 | `__add__`, `__sub__`, `__mul__`, `__truediv__` |
+| 類別 | 方法                                                                |
+| ---- | ------------------------------------------------------------------- |
+| 基本 | `__init__`, `__str__`, `__repr__`                                   |
+| 比較 | `__eq__`, `__lt__`, `__gt__`, `__le__`, `__ge__`                    |
+| 算術 | `__add__`, `__sub__`, `__mul__`, `__truediv__`                      |
 | 容器 | `__len__`, `__getitem__`, `__setitem__`, `__contains__`, `__iter__` |
-| 其他 | `__call__`, `__enter__`, `__exit__`, `__hash__` |
+| 其他 | `__call__`, `__enter__`, `__exit__`, `__hash__`                     |

@@ -6,14 +6,14 @@
 
 ### JavaScript/TypeScript vs Python 型別系統對比
 
-| 特性 | TypeScript | Python Type Hints |
-|------|------------|-------------------|
-| 引入時間 | 2012 年 | Python 3.5（2015）|
-| 強制性 | 可選（但建議使用）| 完全可選 |
-| 執行時檢查 | 編譯時移除 | 執行時可存取（但不強制）|
-| 檢查工具 | tsc | mypy, pyright, pytype |
-| 泛型支援 | 完整 | 完整 |
-| 推斷能力 | 強大 | 較弱（依賴工具）|
+| 特性       | TypeScript         | Python Type Hints        |
+| ---------- | ------------------ | ------------------------ |
+| 引入時間   | 2012 年            | Python 3.5（2015）       |
+| 強制性     | 可選（但建議使用） | 完全可選                 |
+| 執行時檢查 | 編譯時移除         | 執行時可存取（但不強制） |
+| 檢查工具   | tsc                | mypy, pyright, pytype    |
+| 泛型支援   | 完整               | 完整                     |
+| 推斷能力   | 強大               | 較弱（依賴工具）         |
 
 ---
 
@@ -734,14 +734,14 @@ pyright src/
 
 ### 工具比較
 
-| 特性 | mypy | pyright |
-|------|------|---------|
-| 開發者 | Dropbox / Python 社群 | Microsoft |
-| 速度 | 中等 | 快 |
-| IDE 整合 | 良好 | 優秀（VS Code）|
-| 嚴格程度 | 可配置 | 可配置 |
-| 增量檢查 | 支援 | 支援 |
-| 語言 | Python | TypeScript |
+| 特性     | mypy                  | pyright         |
+| -------- | --------------------- | --------------- |
+| 開發者   | Dropbox / Python 社群 | Microsoft       |
+| 速度     | 中等                  | 快              |
+| IDE 整合 | 良好                  | 優秀（VS Code） |
+| 嚴格程度 | 可配置                | 可配置          |
+| 增量檢查 | 支援                  | 支援            |
+| 語言     | Python                | TypeScript      |
 
 ---
 
@@ -1034,23 +1034,23 @@ def handle_response(response: ApiResponse) -> None:
 
 ### JavaScript/TypeScript vs Python 型別提示對照表
 
-| 概念 | TypeScript | Python |
-|------|------------|--------|
-| 基本型別 | `string`, `number`, `boolean` | `str`, `int`, `float`, `bool` |
-| 陣列 | `string[]` 或 `Array<string>` | `list[str]` |
-| 物件/字典 | `{ [key: string]: number }` | `dict[str, int]` |
-| 元組 | `[string, number]` | `tuple[str, int]` |
-| 可選 | `string \| null` | `Optional[str]` 或 `str \| None` |
-| 聯合型別 | `string \| number` | `Union[str, int]` 或 `str \| int` |
-| 函式型別 | `(x: number) => string` | `Callable[[int], str]` |
-| 泛型 | `<T>` | `TypeVar("T")` |
-| 介面 | `interface` | `Protocol` 或 `TypedDict` |
-| 字面值型別 | `"a" \| "b" \| "c"` | `Literal["a", "b", "c"]` |
-| 任意型別 | `any` | `Any` |
-| 未知型別 | `unknown` | `object` |
-| 常數 | `const` / `as const` | `Final` |
-| 型別別名 | `type X = ...` | `TypeAlias` 或 `type X = ...` (3.12+) |
-| 重載 | 函式重載 | `@overload` |
+| 概念       | TypeScript                    | Python                                |
+| ---------- | ----------------------------- | ------------------------------------- |
+| 基本型別   | `string`, `number`, `boolean` | `str`, `int`, `float`, `bool`         |
+| 陣列       | `string[]` 或 `Array<string>` | `list[str]`                           |
+| 物件/字典  | `{ [key: string]: number }`   | `dict[str, int]`                      |
+| 元組       | `[string, number]`            | `tuple[str, int]`                     |
+| 可選       | `string \| null`              | `Optional[str]` 或 `str \| None`      |
+| 聯合型別   | `string \| number`            | `Union[str, int]` 或 `str \| int`     |
+| 函式型別   | `(x: number) => string`       | `Callable[[int], str]`                |
+| 泛型       | `<T>`                         | `TypeVar("T")`                        |
+| 介面       | `interface`                   | `Protocol` 或 `TypedDict`             |
+| 字面值型別 | `"a" \| "b" \| "c"`           | `Literal["a", "b", "c"]`              |
+| 任意型別   | `any`                         | `Any`                                 |
+| 未知型別   | `unknown`                     | `object`                              |
+| 常數       | `const` / `as const`          | `Final`                               |
+| 型別別名   | `type X = ...`                | `TypeAlias` 或 `type X = ...` (3.12+) |
+| 重載       | 函式重載                      | `@overload`                           |
 
 ### 重點回顧
 
