@@ -12,7 +12,7 @@
 ## 目錄結構
 
 ```txt
-js-to-python/
+from-js-to-python/
 ├── docs/           # Markdown 文件（完整說明）
 ├── notebooks/      # Jupyter Notebooks（互動式練習）
 └── README.md
